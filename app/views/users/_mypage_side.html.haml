@@ -1,0 +1,17 @@
+.side-content
+  %nav.mypage-nav-list
+    %ul.mypage-nav-list
+      %li
+        = link_to user_path(current_user.id), class: "mypage-nav-list-item" do
+          マイページ
+          %i.icon-arrow-right
+      %li
+        = link_to ready_users_path, class: "mypage-nav-list-item" do
+          お知らせ
+          %i.icon-arrow-right
+
+      %li
+        = link_to new_product_path, class: "mypage-nav-list-item" do
+          出品する
+          %i.icon-arrow-right
+          
